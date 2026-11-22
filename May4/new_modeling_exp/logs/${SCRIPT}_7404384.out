@@ -1,0 +1,76 @@
+2026-05-07 03:12:08.941838: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-05-07 03:12:12.131992: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-05-07 03:12:30.178939: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+GPUs available: [PhysicalDevice(name='/physical_device:GPU:0', device_type='GPU')]
+
+=== Hypertuning Tesla (multivariate) ===
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1778141564.181799 2351247 gpu_device.cc:2020] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38483 MB memory:  -> device: 0, name: NVIDIA A100-PCIE-40GB, pci bus id: 0000:2f:00.0, compute capability: 8.0
+/projects/p32001/envs/ollama-env/lib/python3.9/site-packages/keras/src/layers/rnn/rnn.py:199: UserWarning: Do not pass an `input_shape`/`input_dim` argument to a layer. When using Sequential models, prefer using an `Input(shape)` object as the first layer in the model instead.
+  super().__init__(**kwargs)
+2026-05-07 03:12:45.007091: W external/local_xla/xla/service/gpu/llvm_gpu_backend/default/nvptx_libdevice_path.cc:41] Can't find libdevice directory ${CUDA_DIR}/nvvm/libdevice. This may result in compilation or runtime failures, if the program we try to run uses routines from libdevice.
+Searched for CUDA in the following directories:
+  ./cuda_sdk_lib
+  0_LSTM_LLM_MULTICLASS.py.runfiles/cuda_nvcc
+  0_LSTM_LLM_MULTICLASS.py.runfiles/cuda_nvdisasm
+  0_LSTM_LLM_MULTICLASS.py.runfiles/nvidia_nvshmem
+  0_LSTM_/cuda_nvcc
+  0_LSTM_/cuda_nvdisasm
+  0_LSTM_/nvidia_nvshmem
+  
+  /usr/local/cuda
+  /opt/cuda
+  /projects/p32001/envs/ollama-env/lib/python3.9/site-packages/tensorflow/python/platform/../../../nvidia/cuda_nvcc
+  /projects/p32001/envs/ollama-env/lib/python3.9/site-packages/tensorflow/python/platform/../../../../nvidia/cuda_nvcc
+  /projects/p32001/envs/ollama-env/lib/python3.9/site-packages/tensorflow/python/platform/../../cuda
+  /projects/p32001/envs/ollama-env/lib/python3.9/site-packages/tensorflow/python/platform/../../../../../..
+  /projects/p32001/envs/ollama-env/lib/python3.9/site-packages/tensorflow/python/platform/../../../../../../..
+  .
+You can choose the search directory by setting xla_gpu_cuda_data_dir in HloModule's DebugOptions.  For most apps, setting the environment variable XLA_FLAGS=--xla_gpu_cuda_data_dir=/path/to/cuda will work.
+2026-05-07 03:12:45.104922: W tensorflow/compiler/mlir/tools/kernel_gen/transforms/gpu_kernel_to_blob_pass.cc:188] Failed to compile generated PTX with ptxas. Falling back to compilation by driver.
+2026-05-07 03:12:45.113095: W tensorflow/compiler/mlir/tools/kernel_gen/transforms/gpu_kernel_to_blob_pass.cc:188] Failed to compile generated PTX with ptxas. Falling back to compilation by driver.
+2026-05-07 03:12:45.120397: W tensorflow/compiler/mlir/tools/kernel_gen/transforms/gpu_kernel_to_blob_pass.cc:188] Failed to compile generated PTX with ptxas. Falling back to compilation by driver.
+2026-05-07 03:12:45.127263: W tensorflow/compiler/mlir/tools/kernel_gen/transforms/gpu_kernel_to_blob_pass.cc:188] Failed to compile generated PTX with ptxas. Falling back to compilation by driver.
+2026-05-07 03:12:45.134070: W tensorflow/compiler/mlir/tools/kernel_gen/transforms/gpu_kernel_to_blob_pass.cc:188] Failed to compile generated PTX with ptxas. Falling back to compilation by driver.
+2026-05-07 03:12:45.147368: W tensorflow/compiler/mlir/tools/kernel_gen/transforms/gpu_kernel_to_blob_pass.cc:188] Failed to compile generated PTX with ptxas. Falling back to compilation by driver.
+2026-05-07 03:12:45.154482: W tensorflow/compiler/mlir/tools/kernel_gen/transforms/gpu_kernel_to_blob_pass.cc:188] Failed to compile generated PTX with ptxas. Falling back to compilation by driver.
+2026-05-07 03:12:45.161621: W tensorflow/compiler/mlir/tools/kernel_gen/transforms/gpu_kernel_to_blob_pass.cc:188] Failed to compile generated PTX with ptxas. Falling back to compilation by driver.
+2026-05-07 03:12:45.169033: W tensorflow/compiler/mlir/tools/kernel_gen/transforms/gpu_kernel_to_blob_pass.cc:188] Failed to compile generated PTX with ptxas. Falling back to compilation by driver.
+2026-05-07 03:12:45.176097: W tensorflow/compiler/mlir/tools/kernel_gen/transforms/gpu_kernel_to_blob_pass.cc:188] Failed to compile generated PTX with ptxas. Falling back to compilation by driver.
+2026-05-07 03:12:45.184314: W tensorflow/compiler/mlir/tools/kernel_gen/transforms/gpu_kernel_to_blob_pass.cc:188] Failed to compile generated PTX with ptxas. Falling back to compilation by driver.
+2026-05-07 03:12:45.191800: W tensorflow/compiler/mlir/tools/kernel_gen/transforms/gpu_kernel_to_blob_pass.cc:188] Failed to compile generated PTX with ptxas. Falling back to compilation by driver.
+2026-05-07 03:12:45.200427: W tensorflow/compiler/mlir/tools/kernel_gen/transforms/gpu_kernel_to_blob_pass.cc:188] Failed to compile generated PTX with ptxas. Falling back to compilation by driver.
+2026-05-07 03:12:46.049272: W external/local_xla/xla/service/gpu/llvm_gpu_backend/nvptx_backend.cc:110] libdevice is required by this HLO module but was not found at ./libdevice.10.bc
+error: libdevice not found at ./libdevice.10.bc
+2026-05-07 03:12:46.049776: E tensorflow/compiler/mlir/tools/kernel_gen/tf_framework_c_interface.cc:227] INTERNAL: Generating device code failed.
+2026-05-07 03:12:46.050447: W tensorflow/core/framework/op_kernel.cc:1842] UNKNOWN: JIT compilation failed.
+2026-05-07 03:12:46.050480: I tensorflow/core/framework/local_rendezvous.cc:407] Local rendezvous is aborting with status: UNKNOWN: JIT compilation failed.
+Traceback (most recent call last):
+  File "/gpfs/projects/p32001/Dana_Storage/CDL2/May4/new_modeling_exp/0_LSTM_LLM_MULTICLASS.py", line 292, in <module>
+    tuner = kt.BayesianOptimization(
+  File "/projects/p32001/envs/ollama-env/lib/python3.9/site-packages/keras_tuner/src/tuners/bayesian.py", line 394, in __init__
+    super().__init__(oracle=oracle, hypermodel=hypermodel, **kwargs)
+  File "/projects/p32001/envs/ollama-env/lib/python3.9/site-packages/keras_tuner/src/engine/tuner.py", line 122, in __init__
+    super().__init__(
+  File "/projects/p32001/envs/ollama-env/lib/python3.9/site-packages/keras_tuner/src/engine/base_tuner.py", line 132, in __init__
+    self._populate_initial_space()
+  File "/projects/p32001/envs/ollama-env/lib/python3.9/site-packages/keras_tuner/src/engine/base_tuner.py", line 192, in _populate_initial_space
+    self._activate_all_conditions()
+  File "/projects/p32001/envs/ollama-env/lib/python3.9/site-packages/keras_tuner/src/engine/base_tuner.py", line 149, in _activate_all_conditions
+    self.hypermodel.build(hp)
+  File "/gpfs/projects/p32001/Dana_Storage/CDL2/May4/new_modeling_exp/0_LSTM_LLM_MULTICLASS.py", line 278, in build_model
+    model.add(LSTM(units, input_shape=(TUNE_LOOKBACK, n_features)))
+  File "/projects/p32001/envs/ollama-env/lib/python3.9/site-packages/keras/src/models/sequential.py", line 122, in add
+    self._maybe_rebuild()
+  File "/projects/p32001/envs/ollama-env/lib/python3.9/site-packages/keras/src/models/sequential.py", line 149, in _maybe_rebuild
+    self.build(input_shape)
+  File "/projects/p32001/envs/ollama-env/lib/python3.9/site-packages/keras/src/layers/layer.py", line 232, in build_wrapper
+    original_build_method(*args, **kwargs)
+  File "/projects/p32001/envs/ollama-env/lib/python3.9/site-packages/keras/src/models/sequential.py", line 195, in build
+    x = layer(x)
+  File "/projects/p32001/envs/ollama-env/lib/python3.9/site-packages/keras/src/utils/traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/projects/p32001/envs/ollama-env/lib/python3.9/site-packages/keras/src/backend/tensorflow/numpy.py", line 2106, in sign
+    return tf.sign(x)
+tensorflow.python.framework.errors_impl.UnknownError: {{function_node __wrapped__Sign_device_/job:localhost/replica:0/task:0/device:GPU:0}} JIT compilation failed. [Op:Sign] name: 

@@ -1,0 +1,8 @@
+2026-05-07 03:22:05.536021: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-05-07 03:22:05.589424: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-05-07 03:22:26.678017: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+Traceback (most recent call last):
+  File "/gpfs/projects/p32001/Dana_Storage/CDL2/May4/new_modeling_exp/0_GRU_LLM_MULTICLASS.py", line 54, in <module>
+    from pytorch_forecasting import TimeSeriesDataSet, TemporalFusionTransformer
+ModuleNotFoundError: No module named 'pytorch_forecasting'

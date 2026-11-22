@@ -1,0 +1,22 @@
+2026-05-07 03:25:55.482974: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-05-07 03:25:55.545172: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-05-07 03:26:21.173172: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+
+=== Hypertuning Tesla (Transformer multivariate) ===
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+I0000 00:00:1778142398.279074 2155001 gpu_device.cc:2020] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 38483 MB memory:  -> device: 0, name: NVIDIA A100-PCIE-40GB, pci bus id: 0000:06:00.0, compute capability: 8.0
+Traceback (most recent call last):
+  File "/gpfs/projects/p32001/Dana_Storage/CDL2/May4/new_modeling_exp/0_Transformer_Encoder_LLM_MULTICLASS.py", line 287, in <module>
+    tuner = kt.BayesianOptimization(
+  File "/projects/p32001/envs/ollama-env/lib/python3.9/site-packages/keras_tuner/src/tuners/bayesian.py", line 394, in __init__
+    super().__init__(oracle=oracle, hypermodel=hypermodel, **kwargs)
+  File "/projects/p32001/envs/ollama-env/lib/python3.9/site-packages/keras_tuner/src/engine/tuner.py", line 122, in __init__
+    super().__init__(
+  File "/projects/p32001/envs/ollama-env/lib/python3.9/site-packages/keras_tuner/src/engine/base_tuner.py", line 121, in __init__
+    backend.io.rmtree(self.project_dir)
+  File "/projects/p32001/envs/ollama-env/lib/python3.9/site-packages/keras_tuner/src/backend/io.py", line 37, in rmtree
+    return tf.io.gfile.rmtree(path)
+  File "/projects/p32001/envs/ollama-env/lib/python3.9/site-packages/tensorflow/python/lib/io/file_io.py", line 676, in delete_recursively_v2
+    _pywrap_file_io.DeleteRecursively(compat.path_to_bytes(path))
+tensorflow.python.framework.errors_impl.NotFoundError: nov30_codes_new_data/TRANSFORMER-HYPERTUNING/transformer_univariate_Tesla/tuner0.json; No such file or directory

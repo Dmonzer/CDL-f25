@@ -1,0 +1,4 @@
+  File "/gpfs/projects/p32001/Dana_Storage/CDL2/May4/new_modeling_exp/0_GRU_ONLY_MULTICLASS.py", line 7
+    pip install pytorch-forecasting pytorch-lightning
+        ^
+SyntaxError: invalid syntax
